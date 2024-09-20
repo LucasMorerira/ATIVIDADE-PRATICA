@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+
+    <style>
+
+        body{
+
+            margin: 0%; /*remover margens padrão  */
+            padding: 0%; /* remover preenchimento padrão*/
+            font-family: arial , sans-serif ; /* definir a fonte padrão*/
+
+        }
+        /*estilo para o contêiner principal*/
+        .container {
+            display: flex; /*define um layout flixivel*/
+            flex-direction: column; /*define a direção do flex como coluna*/
+            height: 100vh; /*definir contâiner como 100%*/
+        }
+        /*estilo para cabeçalho e roda pé*/
+        head, footer{
+            background-color: #555; /*define a cor de fundo*/
+            color: white; /*define cor do texto*/
+            text-align: center; /*centraliza o texto*/
+            padding: 20px; /*adiciona preenchimento interno*/
+        }
+        .main-conntent{
+            display: flex; /*define layout flexivel*/
+            flex: 1; /*faz com que o conteúdo pricipal cresça para preencher o espaço*/       
+        }
+        /*estilo para a divisão à esquerda*/
+        #left{
+            background-color: #8ed6ff; /*define a cor de fundo*/
+            flex: 1; /*faz com que a divisão cresça para preencher 1 parte do espaço*/
+            padding: 20px; /*adiciona preenchimento interno*/
+        }
+        /*estilo para divisão central*/
+        #center{
+            background-color: #D3D3D3; /*definir cor de fundo*/
+            flex: 2; /*faz com que a divisão cresça para preencher 2 parte duas partes do espaço*/
+            padding: 20px; /*adicionar preenchimento interno*/
+        }
+        /*estilo para a divisão à direita */
+        #right{
+            background-color: #ff6f3d; /*difine a cor de fundo*/
+            flex: 1; /*faz com que a divisão cresça para preencher 2 partes do espaço*/
+            padding: 20 px; /*adiciona preenchimento interno*/
+            margin-right: -150px; /*define a margem direita negativa*/
+            margin-right: -150px; /*define uma margem direita nagativa*/
+        }
+    </style>
+
+    <body>
+        <div class="container"> <!--Inicío do contêiner principal-->
+            <header id="header"> <!--cabeçalho-->
+                #header <!--texto do cabeçalho-->
+            </header>
+            <div class="main-conntent"><!--conteúdo principal-->       
+            <div id="left"> <!--divisão a esquerda-->
+                #left <!--texto da divisão à esquerda-->
+            </div>
+            <div id="center"> <!--divisão central-->
+                #center <!--texto da divisão central-->
+            </div>
+            <div id="right"> <!--divisão a direita-->
+                #right <br> <!--texto e divisão a direita-->
+                margin-right:-150px; <!--texto adicional para mostrar a margem negativa-->
+            </div>
+        </div>
+        </div>
+        <footer id="footer"> <!--rodapé-->
+            #footer <!--texto do rodapé-->
+        </footer>
+    </body>
+</head>
+</html>
