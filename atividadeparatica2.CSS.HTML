@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page layout</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "nav main"
+                "footer footer";
+                grid-template-rows: 100px 1fr 50px;
+                grid-template-columns: 200px 1fr;
+                height: 100vh;
+        }
+        header{
+             grid-area: header;
+             background-color: #add8e6;
+             text-align: center;
+             padding: 20px;
+        }
+        nav{
+            grid-area: nav;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        main{
+            grid-area: main;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+        footer{
+            grid-area: footer;
+            background-color: #add8e6;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a{
+            display: block;
+            margin: 10px 0;
+            color: blue;
+            text-decoration: none;
+        }
+        nav a:hover{
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Title</h1>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Learn Html</a>
+            <a href="#">About Us</a>
+        </nav>
+        <main>
+            <h2>Home</h2>
+            <p>This is a Home Page.</p>
+        </main>
+        <footer>
+            footer
+        </footer>
+    </div>
+    
+</body>
+</html>
