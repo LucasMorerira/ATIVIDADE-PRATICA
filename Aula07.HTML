@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <h1>Formulário</h1>
+
+    <!--Início do Formulário-->
+    <form action="" method="post"></form>
+
+    <!--Campo de Entrada de Texto-->
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu Nome">
+    <br><br>
+
+    <!--Campo de Senha-->
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" placeholder="Digite sua Senha">
+    <br><br>
+
+    <!--Campo de E-mail-->
+    <label for="email">E-mail</label>
+    <input type="email" id="email" placeholder="Digite seu E-mail">
+    <br><br>
+
+    <!--Campo de Número-->
+    <label for="numero">Idade:</label>
+    <input type="number" id="Idade" min="1" max="100" placeholder="Digite sua Idade">
+    <br><br>
+
+    <!--Campo de Telefone-->
+    <label for="telefone">Telefone</label>
+    <input type="tel" id="telefone" placeholder="Telefone">
+    <br><br>
+
+    <!--Campo de Data-->
+    <label for="data">Data de Nascimento</label>
+    <input type="date" id="data" name="data">
+    <br><br>
+    
+    <!--Campo de URL-->
+    <label for="website">Website</label>
+    <input type="url" id="website" placeholder="Digit o URL do Seu Site">
+    <br><br>
+
+    <!--Campo de Busca-->
+    <label for="busca">Busca:</label>
+    <input type="search" id="busca" placeholder="Busque Algo">
+    <br><br>
+
+    <!--Área de Texto-->
+    <label for="mensagem">Mensagem</label>
+    <textarea name="mensagem" id="mensagem" rows="4" cols="50" placeholder="Escreva sua Mensagem"></textarea>
+    <br><br>
+
+    <!--Botão de Envio-->
+    <input type="submit" value="Enviar">
+
+    <!--Botão de Redefinir-->
+    <input type="reset" value="Redefnir">
+    <br><br>
+
+    <!--Caixa de Seleção (checkbox)-->
+    <label>
+        <input type="checkbox" name="aceito" value="sim">Aceito os Termos e Condições
+    </label>
+    <br><br>
+
+    <!--Botão de Seleção (radio)-->
+    <p>Sexo:</p>
+    <label>
+        <input type="radio" name="sexo" value="masculino">Masculino
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="sexo" value="feminino">Feminino
+    </label>
+    <br><br>
+
+    <!--Lista de Seleção (dropwown)-->
+    <label for="pais">País</label>
+    <select name="pais" id="pais">
+        <option value="brasil">Brasil</option>
+        <option value="portugal">Portugal</option>
+        <option value="espanha">Espanha</option>
+        <option value="eua">Estados Unidos</option>
+    </select>
+    <br><br>
+
+    <!--Campo de Upload de Arquivo-->
+    <label for="arquivo">Upload de Arquivo</label>
+    <input type="file" id="arquivo" name="arquivo">
+    <br><br>
+    <!--Campo de Intervalo (range)-->
+    <label for="volume">Volume</label>
+    <input type="range" id="volume" name="arquivo">
+    <br><br>
+
+    <!--Campo de Cor-->
+    <label for="cor">Escolha uma Cor</label>
+    <input type="color" id="cor" name="cor">
+    <br><br>
+
+    <!--Campo de Tempo-->
+    <label for="tempo">Escolha um Horário:</label>
+    <input type="time" name="tempo" id="tempo">
+    <br><br>
+
+    <!--Campo do Mês-->
+    <label for="mes">Escolha um Mês:</label>
+    <input type="month" id="mes" name="mes">
+    <br><br>
+
+    <!--Campo de Semana-->
+    <label for="semana">Escolha uma Semana:</label>
+    <input type="week" id="semana" name="semana">
+    <br><br>
+
+    <!--Fim do Formulário-->
+
+</body>
+</html>
